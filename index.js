@@ -9,6 +9,7 @@ if (process.env.AWS_LAMBDA_FUNCTION_VERSION) {
 } else {
   puppeteer = require("puppeteer");
 }
+app.get("/", async (req, res) => { res.send("added one more route") } )
 
 app.get("/api", async (req, res) => {
   let options = {};
